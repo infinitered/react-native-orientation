@@ -1,3 +1,5 @@
+# FORK OF [react-native-orientation](https://github.com/yamill/react-native-orientation) with fix for [RN 0.42 style headers](https://github.com/yamill/react-native-orientation/pull/157)
+
 ## react-native-orientation
 Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.
 
