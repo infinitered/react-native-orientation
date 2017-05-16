@@ -164,5 +164,13 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Lif
 
     @Override
     public void onHostDestroy() {
-        return;
+        final Activity activity = getCurrentActivity();
+        if (activity == null) return;
+        try
+        {
+            FLog.d("calling onHostDestroy RMH", receiver);
+        }
+        catch (java.lang.IllegalArgumentException e) {
+            FLog.e(ReactConstants.TAG, "receiver already unregistered", e);
+        }}
     }
