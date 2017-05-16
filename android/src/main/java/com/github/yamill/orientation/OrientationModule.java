@@ -168,7 +168,7 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Lif
         if (activity == null) return;
         try
         {
-            FLog.d("calling onHostDestroy RMH");
+            FLog.d(ReactConstants.TAG, "calling onHostDestroy RMH");
         }
         catch (java.lang.IllegalArgumentException e) {
             FLog.e(ReactConstants.TAG, "receiver already unregistered", e);
